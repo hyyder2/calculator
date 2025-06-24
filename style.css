@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.main{
+    width: 280px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.938);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 30px; 
+   border-radius: 8px;
+
+}
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.display input{
+    width: 280px;
+    text-align: right;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ac del divison multiplication"
+    "n7 n8 n9 minus"
+    "n6 n5 n4 addition"
+    "n1 n2 n3 equalsto"
+    "n0 n0 dot equalsto";
+    gap: 10px;
+
+   
+}
+.yellow{
+    background-color: #f69906;
+    color: white;
+        width: 100%;
+    height: 50px;display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+     cursor: pointer;
+}
+.gray{
+background-color: #313131;
+ cursor: pointer;
+ color: white;
+    width: 100%;
+    height: 50px;display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+}
+.ac{
+    grid-area: ac;
+}
+.del{
+    grid-area: del;
+}
+.divison{
+    grid-area: divison;
+}
+.multiplication{
+    grid-area: multiplication;
+}
+
+.n7{
+    grid-area: n7;
+}
+.n8{
+    grid-area: n8;
+}
+.n9{
+    grid-area: n9;
+}
+.minus{
+    grid-area: minus;
+}
+.n6{
+    grid-area: n6;
+}
+.n5
+{
+    grid-area: n5;
+}
+.n4
+{
+    grid-area: n4;
+}
+.addition
+{
+    grid-area: addition;
+}
+.n1{
+    grid-area: n1;
+}
+.n2
+{
+    grid-area: n2;
+}
+.n3
+{
+    grid-area: n3;
+}
+.equalsto{
+    grid-area: equalsto;
+    height: 110px;
+}
+.n0{
+    grid-area: n0;
+}
+.dot{
+    grid-area: dot;
+}
