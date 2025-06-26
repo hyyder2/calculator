@@ -18,7 +18,7 @@
                 <button class="yellow ac" onclick="Erase('AC')" id="AC">AC</button>
                 <button class="yellow del" onclick="backspace('Del')" id="Del">DEL</button>
                 <button class="yellow divison" onclick="userinput('/')" id="division">/</button>
-                <button class="yellow multiplication('*')" id="multiplication">*</button>
+                <button class="yellow multiplication"  onclick="userinput('*')" id="multiplication">*</button>
 
                 <button class="gray n7" onclick="userinput ('7')" id="n7">7</button>
                 <button class="gray n8" onclick="userinput ('8')" id="n8">8</button>
@@ -41,7 +41,28 @@
 
         </section>
     </div>
-    <script src="app.js"></script>
+    <script>
+        let val=document.getElementById("input");
+
+function userinput(v){
+    
+    val.value+=v;
+}
+function Erase(){
+    val.value="";
+}
+ function backspace(){
+    val.value=val.value.slice(0,-1)
+ }
+
+ function calculate() {
+  try {
+    val.value = eval(val.value);
+  } catch {
+    val.value = "Error!";
+  }
+}
+    </script>
 </body>
 
 </html>
